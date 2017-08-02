@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>websocket</title>
+</head>
+<body>
+    <form onSubmit="return false;">  
+        <input type="text" class="msg" name="message" value="你好啊"/>  
+        <br/><br/>  
+        <input type="button" class="sendMsg" value="发送消息"/>
+        <input type="button" class="clearHistory" value="清空历史消息" onClick="clearHistory()"/>  
+        <hr/>  
+        <h3>服务端返回的应答消息</h3>  
+        <textarea id="responseText" style="width: 800px;height: 300px;"></textarea>  
+    </form>  
+</body>
+<script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="jquery-websocket.js"></script>
+<script type="text/javascript" src="websocket.js"></script>
+</html>
